@@ -7,7 +7,7 @@ class Show extends PureComponent {
   constructor(props) {
     super(props)
     this.state = {
-      showIndex: 0
+      showIndex: (this.props.showIndex || 0)
     }
   }
 
