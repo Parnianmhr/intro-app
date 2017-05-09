@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Button from './components/Button'
 import Show from './components/Show'
-import show from './shows'
+import shows from './shows'
 
 
 class App extends Component {
@@ -17,7 +17,7 @@ class App extends Component {
             <Button />
           </div>
           <div className="col-8">
-            <Show show={show[2]} />
+            <Show shows={shows} />
           </div>
         </div>
       </div>
