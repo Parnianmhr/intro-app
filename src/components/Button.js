@@ -4,23 +4,24 @@ class Button extends PureComponent {
   constructor(props) {
     super(props)
     this.state = {
-      color: 'blue'
+      showMe: false
     }
   }
+
   handleClick() {
-    this.setState(function(prevState) {
-      return {
-        color: (prevState.color === 'blue') ? 'green' : 'blue'
-      }
-    })
+    this.setState({ showMe : true })
   }
+
   render() {
-    return(
-      <div>
-        <h1 style={{ color: this.state.color }}>Hello World</h1>
-        <button onClick={this.handleClick.bind(this)}>click me</button>
-      </div>
-    )
+      if(this.state.showMe) {
+        return (
+          <h1 style={{backgroundColor: 'lightgray', padding: 15, margin: 50}}>This is a page to show some info about movies.</h1>
+        )
+      }else{
+        return(
+          <button style={{backgroundColor: '#340f31', padding: 15, margin: 100, color:'white'}} onClick={this.handleClick.bind(this)}>What is this page?</button>
+        )
+      }
   }
 }
 
