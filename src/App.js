@@ -10,8 +10,14 @@ class App extends Component {
         <div className="App-header">
           <h2>Welcome to learning react and redux with Parnian</h2>
         </div>
-        <Button />
-        <Show />
+        <div className="row">
+          <div className="col-4">
+            <Button />
+          </div>
+          <div className="col-8">
+            <Show />
+          </div>
+        </div>
       </div>
     );
   }
