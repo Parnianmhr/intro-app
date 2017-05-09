@@ -5,8 +5,8 @@ class Info extends PureComponent {
   render() {
     return(
       <div>
-        <p>plot: Follows the personal and professional lives of six 20 to 30-something-year-old friends living in Manhattan.</p>
-        <h5>IMDB rating: 9.0</h5>
+        <p>plot: {this.props.showInfo}</p>
+        <h5>IMDB rating: {this.props.showRating}</h5>
       </div>
     )
   }

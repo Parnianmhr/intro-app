@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import Button from './components/Button'
 import Show from './components/Show'
+import show from './shows'
+
 
 class App extends Component {
   render() {
@@ -15,7 +17,7 @@ class App extends Component {
             <Button />
           </div>
           <div className="col-8">
-            <Show />
+            <Show show={show[2]} />
           </div>
         </div>
       </div>
